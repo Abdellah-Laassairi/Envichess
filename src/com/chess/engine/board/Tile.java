@@ -1,8 +1,9 @@
 package com.chess.engine.board;
+import com.chess.engine.pieces.Piece;
 
 public abstract class Tile {
 
-    int tileCoordinate;
+    protected final int tileCoordinate;
 
     Tile(int tileCoordinate){
         this.tileCoordinate=tileCoordinate;
@@ -13,7 +14,7 @@ public abstract class Tile {
 
 
     public static final class EmptyTile extends Tile{
-        EmptyTile(int tileCoordinate){
+        EmptyTile(final int tileCoordinate){
             super(tileCoordinate);
         }
         @Override
@@ -27,7 +28,7 @@ public abstract class Tile {
     }
 
     public static final class OccupiedTile extends Tile{
-        Piece pieceOnTile;
+        private final Piece pieceOnTile;
         OccupiedTile(int tileCoordinate, Piece pieceOnTile){
             super(tileCoordinate);
             this.pieceOnTile=pieceOnTile;
