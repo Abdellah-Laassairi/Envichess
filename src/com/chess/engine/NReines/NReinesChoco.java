@@ -1,12 +1,12 @@
-package com.chess.engine.pieces;
+package com.chess.engine.NReines;
 
 import org.chocosolver.solver.*;
 import org.chocosolver.solver.variables.*;
 
-public class reinesChoco {
+public class NReinesChoco {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+        /* TODO Auto-generated method stub */
         /*Variables: Reines[4]
          * Domaines : {1,2,3,4}
          * Contraintes: i!=j: reines[i]!=reines[j];
@@ -14,7 +14,7 @@ public class reinesChoco {
          * 				|reines[i]-i|!=|reines[j]-j|
          * 	(reines[i]-i!=reines[j]-j) || (i-reines[i]!=reines[j]-j) || (reines[i]-i!=j-reines[j]) || (i-reines[i]!=j-reines[j])
          */
-        //1)D�clarer le mod�le
+        //1)Declaration du model
         int n=4;
         Model m=new Model(n+" reines");
         //2)Variables
