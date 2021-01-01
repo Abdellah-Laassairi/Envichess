@@ -8,6 +8,7 @@ public class PPC {
 
     public static void main(String[] args) {
     int[] reines=new int[N];
+
     resoudre_naive(reines);
     resoudre_backtracking(reines);
     //resoudre_forwardchecking(reines);
@@ -55,6 +56,7 @@ public class PPC {
     static void resoudre_lookahead(int [] reines){
 
     }
+
 
 }
 
