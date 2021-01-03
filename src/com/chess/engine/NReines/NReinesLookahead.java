@@ -58,7 +58,7 @@ public class NReinesLookahead {
         }
     }
 
-
+    //Verification sur tous les variables avant affectation
     static boolean resoudreNQ(Variable reines[], int Li, int queen_i) throws ArrayIndexOutOfBoundsException {
         if (queen_i >= N-1) {
             return true;

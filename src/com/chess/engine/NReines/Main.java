@@ -24,11 +24,11 @@ public class Main {
     resoudre_choco(N);
 }
 
+    //Dans chaque methode on cree l'object correspondant et on fait appele a la fonction resolution
     //--------------------------------------------
     //Methode numero 1° : Résolution naïve
     static void resoudre_naive(int [] reines, int N) {
         System.out.println("\nResolution avec methode Naive:");
-
         NReinesNaive queen =new NReinesNaive(N);
         int[] array=new int[N];
         for(int i=0;i<N;i++){

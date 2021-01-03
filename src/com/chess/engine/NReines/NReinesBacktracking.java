@@ -29,7 +29,7 @@ public class NReinesBacktracking {
     }
 
     //--------------------------------------------
-    /*Fonction Recursive pour resoudre le probleme */
+    /*Fonction Recursive pour resoudre le probleme  */
     static boolean resoudreNQ(int reines[], int queen_i)
     {
         for (int i = 1; i <= N; i++) {

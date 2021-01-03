@@ -7,7 +7,7 @@ public class NReinesForwardcheking {
     public NReinesForwardcheking(int N) {
         this.N=N;
     }
-
+    //Class du Variable
     public class Variable {
         private Map<Integer, Integer> Domain = new HashMap<Integer, Integer>();
         private int Valeur;
@@ -18,7 +18,7 @@ public class NReinesForwardcheking {
             }
         }
     }
-
+    //Fonction qui supprime les elements du domain de tous les variables si on place la reine Qi dans la ligne i
     //--------------------------------------------
     private static void RemoveDomain(Variable[] reines, int i, int Qi) {
 
@@ -31,7 +31,7 @@ public class NReinesForwardcheking {
                 reines[j+Qi].Domain.remove(Math.abs(j-i));
         }
     }
-
+    //Fonction qui ajoute les elements du domain supprimé aprés le retour en arriere
     //--------------------------------------------
     private static void RestoreDomain(Variable[] reines, int i, int Qi) {
 
@@ -45,6 +45,7 @@ public class NReinesForwardcheking {
         }
     }
 
+    //Fonction recursive qui utilise les deux fonction removeDomaine et Restore domaine pour l'implementation d'algorithm Forwardchecking
     //--------------------------------------------
     static boolean resoudreNQ(Variable reines[], int Li, int queen_i) throws ArrayIndexOutOfBoundsException
     {
