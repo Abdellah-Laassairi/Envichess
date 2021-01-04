@@ -82,7 +82,6 @@ public class NReinesNaive {
                             if(test!=nbre_comp)
                                 break;
                         }
-
                         if(r1>=3){
                             Main.printSolution(reines, 4);
                         }
