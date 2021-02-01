@@ -18,6 +18,7 @@ public class NReinesForwardcheking {
             }
         }
     }
+    
     //Fonction qui supprime les elements du domain de tous les variables si on place la reine Qi dans la ligne i
     //--------------------------------------------
     private static void RemoveDomain(Variable[] reines, int i, int Qi) {

@@ -27,6 +27,7 @@ public class NReinesNaive {
         return true;
 
     }
+    //[1,2,3,4]
     //---------------------------------------------------------------
     //Fonction recursive pour resoudre le probleme des N Reines en utilisant l'algorithm Naive.
     //Cette fonction fait la permutation d'array int Array et verifier si la solution est correct ou non avec la methode contraintRespect
@@ -35,6 +36,7 @@ public class NReinesNaive {
             int temp = intArray[start];
             intArray[start] = intArray[i];
             intArray[i] = temp;
+            //Permutation
             resoudreNQ(intArray, start + 1, reines);
             intArray[i] = intArray[start];
             intArray[start] = temp;

@@ -2,6 +2,7 @@ package com.chess.engine.NReines;
 
 public class NReinesBacktracking {
     private static int N = 4;
+
     public NReinesBacktracking(int N) {
         this.N=N;
     }

@@ -64,9 +64,10 @@ public class NReinesLookahead {
             return true;
         }
         for(int i=1;i<=N;i++){
+            /*Retirant toutes les
+            valeurs de Li qui n'ont pas de valeurs compatibles*/
             RemoveDomain(reines, Li, queen_i);
             if (reines[queen_i + 1].Domain.containsKey(i)) {
-
                 if (resoudreNQ(reines, i,queen_i + 1) == true) {
                     reines[queen_i + 1].Valeur = i;
                     return true;
